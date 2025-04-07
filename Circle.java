@@ -1,12 +1,15 @@
-public class Circle implements Shape {
-    private double radius;
+package graphics;
 
-    public Circle(double radius) {
-        this.radius = radius;
+public class Circle implements Shape {
+    double radius;
+
+    public Circle(double r) {
+        this.radius = r;
     }
 
-    public double area() {
-        return Math.PI * radius * radius;
+    public void area() {
+        double area = Math.PI * radius * radius;
+        System.out.println("Area of Circle: " + area);
     }
 }
 

@@ -1,14 +1,15 @@
-public class Rectangle implements Shape {
-    private double length;
-    private double width;
+package graphics;
 
-    public Rectangle(double length, double width) {
-        this.length = length;
-        this.width = width;
+public class Rectangle implements Shape {
+    double length, breadth;
+
+    public Rectangle(double l, double b) {
+        this.length = l;
+        this.breadth = b;
     }
 
-    public double area() {
-        return length * width;
+    public void area() {
+        double area = length * breadth;
+        System.out.println("Area of Rectangle: " + area);
     }
 }
-

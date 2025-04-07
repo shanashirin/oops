@@ -1,11 +1,14 @@
-public class Square implements Shape {
-    private double side;
+package graphics;
 
-    public Square(double side) {
-        this.side = side;
+public class Square implements Shape {
+    double side;
+
+    public Square(double s) {
+        this.side = s;
     }
 
-    public double area() {
-        return side * side;
+    public void area() {
+        double area = side * side;
+        System.out.println("Area of Square: " + area);
     }
 }
